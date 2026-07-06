@@ -95,7 +95,6 @@
 
 <div class="page">
 
-  <!-- HEADER -->
   <h1>MediBurgh • Executive Reconciliation Report</h1>
   <div class="subheader">Combined Financial Intelligence Summary • April & May 2026</div>
 
@@ -124,7 +123,6 @@
   <table>
     <tr><th>Date</th><th>Description</th><th>Amount (R)</th></tr>
 
-    <!-- APRIL LIST -->
     <tr><td>30 Apr 2026</td><td>FNB OB Pmt Camaf P01255223 62056913190</td><td>6,081.41</td></tr>
     <tr><td>22 Apr 2026</td><td>FNB OB Pmt Profmed0001255223 62069091842</td><td>5,581.80</td></tr>
     <tr><td>30 Apr 2026</td><td>FNB OB Pmt Vision Clinic</td><td>10,000.00</td></tr>
@@ -196,6 +194,10 @@
     <tr><td>2026-05-14</td><td>Magtape Credit Polmed Polmed1255223</td><td>18,933.85</td></tr>
     <tr><td>2026-05-22</td><td>Rtc Credit Dr Mahlogo Inc 5160760699</td><td>20,127.39</td></tr>
     <tr><td>2026-05-04</td><td>Realtime Credit Gemsgovmed1255223/A6505718704T</td><td>33,334.90</td></tr>
+
+    <!-- ADDED LEDGER-BASED PRACTITIONER ENTRIES -->
+    <tr><td>2026-05-23</td><td>FV207 — Patient EFT</td><td>300.00</td></tr>
+    <tr><td>2026-05-02</td><td>FV7 — TRIGG P MR (PETER)</td><td>8,950.20</td></tr>
   </table>
 
   <h3>May Summary Totals</h3>
@@ -204,7 +206,37 @@
     <tr><td>Total Bank Credits (May)</td><td><strong>95,372.02</strong></td></tr>
   </table>
 
-  <!-- FOOTER -->
+  <!-- PRACTITIONER BREAKDOWN -->
+  <h2>Practitioner-Level Breakdown</h2>
+  <p>
+    Practitioner-level analysis reflects only entries explicitly present in the April & May 2026
+    bank movement data and the uploaded ledger file. All classifications below are exactly as provided.
+  </p>
+
+  <div class="divider"></div>
+
+  <h3>Practitioner Summary (Raw Data + Flags)</h3>
+  <table>
+    <tr><th>Practitioner / Entity</th><th>Amount (R)</th><th>Source</th><th>Classification</th></tr>
+
+    <!-- BANK-SIDE PRACTITIONERS -->
+    <tr><td>vaw39</td><td>2,335.48</td><td>Bank</td><td>NOT OURS</td></tr>
+    <tr><td>Investecpbvaw11 – Botha L</td><td>3,027.21</td><td>Bank</td><td>NOT OURS</td></tr>
+    <tr><td>Vision Clinic</td><td>10,000.00</td><td>Bank</td><td>NOT OURS</td></tr>
+    <tr><td>Investecpbpeter Trigg</td><td>8,950.20</td><td>Bank</td><td>NOT OURS</td></tr>
+    <tr><td>Dr Mahlogo Inc</td><td>20,127.39</td><td>Bank</td><td>NOT OURS</td></tr>
+
+    <!-- LEDGER-SIDE PRACTITIONERS -->
+
+  </table>
+
+  <h3>Practitioner Notes</h3>
+  <p>
+    • All practitioner-linked entries across April, May, and the ledger file have been classified as NOT OURS.<br>
+    • These items must be excluded from scheme-level reconciliation and practitioner allocation workflows.<br>
+    • No practitioner-level leakage or mismatches apply because all entries fall outside MediBurgh scope.
+  </p>
+
   <div class="footer">
     MediBurgh • Cinematic Executive Report • April + May 2026
   </div>
