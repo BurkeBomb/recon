@@ -2,94 +2,116 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MediBurgh Combined EFT Reconciliation Report – April & May 2026</title>
+<title>MediBurgh • Cinematic Executive Reconciliation Report • Apr + May 2026</title>
+
 <style>
   body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    color: #222;
-    line-height: 1.5;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0b0b0c;
+    color: #e6e6e6;
+    line-height: 1.6;
   }
+
+  .page {
+    padding: 60px 80px;
+  }
+
   h1, h2, h3 {
-    color: #0a3d62;
-    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
   }
-  .section {
-    margin-bottom: 50px;
+
+  h1 {
+    font-size: 36px;
+    color: #f5c16c;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f5c16c;
+    padding-bottom: 10px;
   }
-  .header {
-    text-align: center;
-    margin-bottom: 60px;
+
+  h2 {
+    font-size: 24px;
+    color: #f5c16c;
+    margin-top: 60px;
   }
-  .header h1 {
-    font-size: 30px;
-    margin-bottom: 5px;
-  }
-  .header h2 {
+
+  h3 {
     font-size: 18px;
-    font-weight: normal;
-    color: #555;
+    color: #d0d0d0;
+    margin-top: 30px;
   }
+
+  .subheader {
+    font-size: 16px;
+    color: #999;
+    margin-top: -10px;
+    margin-bottom: 40px;
+  }
+
+  .divider {
+    height: 2px;
+    background: linear-gradient(to right, #f5c16c, transparent);
+    margin: 40px 0;
+  }
+
   table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
+    background: #111;
   }
+
   table th, table td {
-    border: 1px solid #ccc;
-    padding: 8px;
+    border: 1px solid #333;
+    padding: 10px;
     font-size: 14px;
   }
+
   table th {
-    background: #f0f0f0;
-    font-weight: bold;
+    background: #1a1a1d;
+    color: #f5c16c;
+    font-weight: 400;
+    text-transform: uppercase;
   }
-  .highlight {
-    background: #e8f6ff;
-    padding: 10px;
-    border-left: 4px solid #0a3d62;
-    margin: 20px 0;
+
+  table tr:nth-child(even) {
+    background: #141414;
   }
+
   .footer {
-    margin-top: 60px;
     text-align: center;
+    margin-top: 80px;
     font-size: 12px;
     color: #777;
+    letter-spacing: 1px;
   }
 </style>
 </head>
 
 <body>
 
-<!-- ===================== HEADER ===================== -->
+<div class="page">
 
-<div class="header">
-  <h1>MediBurgh Combined EFT Reconciliation Report</h1>
-  <h2>April & May 2026 • Operations & Revenue Integrity</h2>
-</div>
+  <!-- HEADER -->
+  <h1>MediBurgh • Executive Reconciliation Report</h1>
+  <div class="subheader">Combined Financial Intelligence Summary • April & May 2026</div>
 
-<!-- ===================== APRIL SECTION ===================== -->
-
-<div class="section">
+  <!-- APRIL SECTION -->
   <h2>April 2026 — Executive Summary</h2>
   <p>
-    April 2026 reconciliation confirms that all scheme EFT batches recorded in the practice ledger 
-    are fully represented on the bank statement. Timing differences of 1–3 days were observed and 
-    are normal for scheme processing cycles. Unmatched magtape credits dated 01 April relate to 
-    prior periods or other providers.
+    April 2026 reconciliation confirms full alignment between practice ledger scheme EFT postings and 
+    bank-side magtape credits. All batches matched cleanly with only normal timing differences observed. 
+    Unmatched credits dated 01 April were classified as prior-period or other-provider items.
   </p>
-</div>
 
-<div class="section">
-  <h2>April 2026 — Scheme-Level Reconciliation</h2>
+  <div class="divider"></div>
 
+  <h3>April 2026 — Scheme-Level Reconciliation</h3>
   <table>
-    <tr>
-      <th>Scheme</th>
-      <th>Ledger Total (R)</th>
-      <th>Bank Total (R)</th>
-      <th>Status</th>
-    </tr>
+    <tr><th>Scheme</th><th>Ledger Total (R)</th><th>Bank Total (R)</th><th>Status</th></tr>
     <tr><td>Bestmed</td><td>25,339.90</td><td>25,339.90</td><td>Fully Reconciled</td></tr>
     <tr><td>Discovery</td><td>96,737.33</td><td>96,737.33</td><td>Fully Reconciled</td></tr>
     <tr><td>GEMS</td><td>48,327.67</td><td>48,327.67</td><td>Fully Reconciled</td></tr>
@@ -97,15 +119,12 @@
     <tr><td>Bonitas</td><td>18,592.15</td><td>18,592.15</td><td>Fully Reconciled</td></tr>
     <tr><td>Other Schemes</td><td>All matched</td><td>All matched</td><td>Fully Reconciled</td></tr>
   </table>
-</div>
 
-<div class="section">
-  <h2>April 2026 — Full Bank Credit Summary</h2>
-
+  <h3>April 2026 — Full Bank Credit Summary</h3>
   <table>
     <tr><th>Date</th><th>Description</th><th>Amount (R)</th></tr>
 
-    <!-- April list -->
+    <!-- APRIL LIST -->
     <tr><td>30 Apr 2026</td><td>FNB OB Pmt Camaf P01255223 62056913190</td><td>6,081.41</td></tr>
     <tr><td>22 Apr 2026</td><td>FNB OB Pmt Profmed0001255223 62069091842</td><td>5,581.80</td></tr>
     <tr><td>30 Apr 2026</td><td>FNB OB Pmt Vision Clinic</td><td>10,000.00</td></tr>
@@ -155,25 +174,20 @@
     <tr><td>ELIVE</td><td>239,483.04</td></tr>
     <tr><td>DIFF</td><td>-257.82</td></tr>
   </table>
-</div>
 
-<!-- ===================== MAY SECTION ===================== -->
-
-<div class="section">
+  <!-- MAY SECTION -->
   <h2>May 2026 — Executive Summary</h2>
   <p>
-    May 2026 inflows consist of scheme payments, real-time credits, magtape deposits, and practitioner 
+    May 2026 inflows include scheme payments, real-time credits, magtape deposits, and practitioner 
     payments. These entries form the basis for scheme-level and practitioner-level reconciliation.
   </p>
-</div>
 
-<div class="section">
-  <h2>May 2026 — Full Bank Credit Summary</h2>
+  <div class="divider"></div>
 
+  <h3>May 2026 — Full Bank Credit Summary</h3>
   <table>
     <tr><th>Date</th><th>Description</th><th>Amount (R)</th></tr>
 
-    <!-- May list -->
     <tr><td>2026-05-23</td><td>FNB App Payment From Fv207</td><td>300.00</td></tr>
     <tr><td>2026-05-18</td><td>Realtime Credit Gemsgovmed1255223/A6518645318T</td><td>1,390.20</td></tr>
     <tr><td>2026-05-08</td><td>Magtape Credit Vaw39</td><td>2,335.48</td></tr>
@@ -189,12 +203,12 @@
     <tr><th>Label</th><th>Amount (R)</th></tr>
     <tr><td>Total Bank Credits (May)</td><td><strong>95,372.02</strong></td></tr>
   </table>
-</div>
 
-<!-- ===================== FOOTER ===================== -->
+  <!-- FOOTER -->
+  <div class="footer">
+    MediBurgh • Cinematic Executive Report • April + May 2026
+  </div>
 
-<div class="footer">
-  MediBurgh Operations • Combined Report • April & May 2026
 </div>
 
 </body>
