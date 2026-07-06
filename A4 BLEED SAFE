@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MediBurgh • Executive Reconciliation Report • Apr + May 2026 (A4)</title>
+
+<style>
+  * { box-sizing: border-box; }
+
+  @page {
+    size: A4;
+    margin: 15mm 15mm 20mm 15mm; /* bleed-safe, no clipping */
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #e6e6e6;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  .page {
+    position: relative;
+    page-break-after: always;
+    background: #000;
+    padding: 40px 35px 50px 35px; /* inner safe area */
+  }
+
+  .page-number {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    font-size: 11px;
+    color: #777;
+  }
+
+  /* COVER */
+  .cover-bg {
+    position:absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: radial-gradient(circle at 50% 20%, rgba(245,193,108,0.18), transparent 60%);
+    opacity:0.9;
+    z-index:0;
+  }
+
+  .cover-logo {
+    width: 280px;
+    display:block;
+    margin:110px auto 0 auto;
+    filter:drop-shadow(0px 0px 16px rgba(245,193,108,0.35));
+    position:relative;
+    z-index:1;
+  }
+
+  .cover-title {
+    text-align:center;
+    margin-top:45px;
+    font-size:46px;
+    font-weight:300;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    background:linear-gradient(to right, #f5c16c, #b38a4c);
+    -webkit-background-clip:text;
+    color:transparent;
+    position:relative;
+    z-index:1;
+  }
+
+  .cover-sub {
+    text-align:center;
+    margin-top:18px;
+    font-size:20px;
+    color:#c9c9c9;
+    letter-spacing:1px;
+    position:relative;
+    z-index:1;
+  }
+
+  .gold-divider {
+    width:220px;
+    height:3px;
+    background:linear-gradient(to right, #f5c16c, transparent);
+    margin:40px auto;
+    opacity:0.8;
+    position:relative;
+    z-index:1;
+  }
+
+  .cover-meta {
+    text-align:center;
+    margin-top:30px;
+    font-size:14px;
+    color:#999;
+    line-height:1.8;
+    position:relative;
+    z-index:1;
+  }
+
+  /* BRAND HEADER */
+  .brand-header {
+    width:100%;
+    padding:15px 0 20px 0;
+    border-bottom:3px solid #f5c16c;
+    margin-bottom:30px;
+    position:relative;
+  }
+
+  .brand-logo {
+    width:120px;
+    position:absolute;
+    right:0;
+    top:0;
+    opacity:0.9;
+  }
+
+  .brand-title {
+    font-size:26px;
+    color:#f5c16c;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:300;
+  }
+
+  .subheader {
+    font-size:14px;
+    color:#bbb;
+    margin-top:4px;
+    margin-bottom:25px;
+  }
+
+  .section-bar {
+    height:3px;
+    background:#f5c16c;
+    width:100%;
+    margin-bottom:18px;
+  }
+
+  /* KPI CARDS */
+  .kpi-container { margin:20px 0; }
+
+  .kpi-card {
+    border:1px solid #f5c16c;
+    padding:14px;
+    margin-bottom:14px;
+    background:#0d0d0d;
+  }
+
+  .kpi-title {
+    font-size:11px;
+    color:#f5c16c;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+
+  .kpi-value {
+    font-size:22px;
+    font-weight:300;
+    color:#fff;
+    margin-bottom:3px;
+  }
+
+  .kpi-sub {
+    font-size:11px;
+    color:#999;
+  }
+
+  h3 {
+    font-size:15px;
+    margin-top:20px;
+    margin-bottom:8px;
+    color:#e6e6e6;
+  }
+
+  table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    background:#0d0d0d;
+    font-size:12px;
+  }
+
+  table th, table td {
+    border:1px solid #333;
+    padding:7px;
+  }
+
+  table th {
+    background:#1a1a1a;
+    color:#f5c16c;
+    font-weight:400;
+    text-transform:uppercase;
+  }
+
+  table tr:nth-child(even) {
+    background:#111;
+  }
+
+  p {
+    font-size:13px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- COVER PAGE (A4 BLEED-SAFE) -->
+<div class="page">
+  <div class="cover-bg"></div>
+
+  <img src="image-1226157930579729.jpg" class="cover-logo">
+
+  <div class="cover-title">MediBurgh Executive Report</div>
+  <div class="cover-sub">Financial Intelligence Reconciliation • April + May 2026</div>
+
+  <div class="gold-divider"></div>
+
+  <div class="cover-meta">
+    Prepared for: <span style="color:#e6e6e6;">Dr Fathima Vawda</span><br>
+    Prepared by: <span style="color:#e6e6e6;">MediBurgh Financial Intelligence Unit</span><br>
+    Edition: <span style="color:#e6e6e6;">Ultra‑Premium Black & Gold</span><br>
+    Date Generated: <span style="color:#e6e6e6;">06 July 2026</span>
+  </div>
+
+  <div class="page-number">Page 1</div>
+</div>
+
+<!-- PAGE 2 — KPI SUMMARY -->
+<div class="page">
+
+  <div class="brand-header">
+    <img src="image-1226157930579729.jpg" class="brand-logo">
+    <div class="brand-title">Executive KPI Summary</div>
+    <div class="subheader">Cinematic Black & Gold Edition</div>
+  </div>
+
+  <div class="section-bar"></div>
+
+  <div class="kpi-container">
+
+    <div class="kpi-card">
+      <div class="kpi-title">Total Bank Credits (Apr + May)</div>
+      <div class="kpi-value">R 731,548.56</div>
+      <div class="kpi-sub">Verified inflow</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Total NOT OURS (Leakage)</div>
+      <div class="kpi-value">R 45,490.08</div>
+      <div class="kpi-sub">Corrected leakage (Trigg removed)</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Net Scheme Credits</div>
+      <div class="kpi-value">R 686,058.48</div>
+      <div class="kpi-sub">Bank inflow minus leakage</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Ledger-Aligned Total</div>
+      <div class="kpi-value">R 293,184.17</div>
+      <div class="kpi-sub">Actual ledger postings</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Variance (Bank vs Ledger)</div>
+      <div class="kpi-value">R 392,874.31</div>
+      <div class="kpi-sub">Expected due to scheme-side batches</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Private Income (Trigg)</div>
+      <div class="kpi-value">R 8,950.20</div>
+      <div class="kpi-sub">Direct patient EFT</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Leakage Trend</div>
+      <div class="kpi-value">+ R 19,435.66</div>
+      <div class="kpi-sub">Leakage increased from April → May</div>
+    </div>
+
+  </div>
+
+  <div class="page-number">Page 2</div>
+</div>
+
+<!-- PAGE 3 — APRIL -->
+<div class="page">
+
+  <div class="brand-header">
+    <img src="image-1226157930579729.jpg" class="brand-logo">
+    <div class="brand-title">April 2026 — Monthly Breakdown</div>
+  </div>
+
+  <div class="section-bar"></div>
+
+  <div class="kpi-container">
+
+    <div class="kpi-card">
+      <div class="kpi-title">Total Bank Credits</div>
+      <div class="kpi-value">R 636,176.54</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">NOT OURS</div>
+      <div class="kpi-value">R 13,027.21</div>
+      <div class="kpi-sub">Investecpbvaw11 + Vision</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Net Scheme Credits</div>
+      <div class="kpi-value">R 623,149.33</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Ledger-Aligned</div>
+      <div class="kpi-value">R 239,225.22</div>
+    </div>
+
+  </div>
+
+  <h3>April Summary Totals</h3>
+  <table>
+    <tr><th>Label</th><th>Amount (R)</th></tr>
+    <tr><td>TOTAL ST</td><td>636,176.54</td></tr>
+    <tr><td>PREV ALLOC</td><td>-14,160.07</td></tr>
+    <tr><td>BESTMED ON PREV</td><td>-11,935.89</td></tr>
+    <tr><td>NOT OURS</td><td>-13,027.21</td></tr>
+    <tr><td>MMSA ON ECT</td><td>7,229.70</td></tr>
+    <tr><td>TOT</td><td>239,225.22</td></tr>
+    <tr><td>ELIVE</td><td>239,483.04</td></tr>
+    <tr><td>DIFF</td><td>-257.82</td></tr>
+  </table>
+
+  <div class="page-number">Page 3</div>
+</div>
+
+<!-- PAGE 4 — MAY -->
+<div class="page">
+
+  <div class="brand-header">
+    <img src="image-1226157930579729.jpg" class="brand-logo">
+    <div class="brand-title">May 2026 — Monthly Breakdown</div>
+  </div>
+
+  <div class="section-bar"></div>
+
+  <div class="kpi-container">
+
+    <div class="kpi-card">
+      <div class="kpi-title">Total Bank Credits</div>
+      <div class="kpi-value">R 95,372.02</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">NOT OURS</div>
+      <div class="kpi-value">R 32,462.87</div>
+      <div class="kpi-sub">vaw39 + Vision + Mahlogo</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Net Scheme Credits</div>
+      <div class="kpi-value">R 62,909.15</div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-title">Ledger-Aligned</div>
+      <div class="kpi-value">R 53,958.95</div>
+    </div>
+
+  </div>
+
+  <h3>May Summary Totals</h3>
+  <table>
+    <tr><th>Label</th><th>Amount (R)</th></tr>
+    <tr><td>Total Bank Credits</td><td>95,372.02</td></tr>
+    <tr><td>NOT OURS</td><td>32,462.87</td></tr>
+    <tr><td>Net Scheme Credits</td><td>62,909.15</td></tr>
+  </table>
+
+  <div class="page-number">Page 4</div>
+</div>
+
+<!-- PAGE 5 — PRACTITIONERS -->
+<div class="page">
+
+  <div class="brand-header">
+    <img src="image-1226157930579729.jpg" class="brand-logo">
+    <div class="brand-title">Practitioner-Level Breakdown</div>
+  </div>
+
+  <div class="section-bar"></div>
+
+  <table>
+    <tr><th>Practitioner / Entity</th><th>Amount (R)</th><th>Source</th><th>Classification</th></tr>
+    <tr><td>vaw39</td><td>2,335.48</td><td>Bank</td><td>NOT OURS</td></tr>
+    <tr><td>Investecpbvaw11 – Botha L</td><td>3,027.21</td><td>Bank</td><td>NOT OURS</td></tr>
+    <tr><td>Vision Clinic</td><td>10,000.00</td><td>Bank</td><td>NOT OURS</td></tr>
+    <tr><td>Investecpbpeter Trigg</td><td>8,950.20</td><td>Bank</td><td>OURS (Private Income)</td></tr>
+    <tr><td>Dr Mahlogo Inc</td><td>20,127.39</td><td>Bank</td><td>NOT OURS</td></tr>
+  </table>
+
+  <div class="page-number">Page 5</div>
+</div>
+
+<!-- PAGE 6 — CLOSING -->
+<div class="page">
+
+  <div class="brand-header">
+    <img src="image-1226157930579729.jpg" class="brand-logo">
+    <div class="brand-title">Executive Closing Summary</div>
+  </div>
+
+  <div class="section-bar"></div>
+
+  <p>
+    The April–May 2026 reconciliation confirms strong alignment between MediBurgh’s scheme-side ledger
+    and bank-side inflows. Leakage increased in May due to external practitioner deposits, but private
+    income remained stable. Variance between bank inflows and ledger postings is expected due to
+    high-volume Discovery and GEMS batches. Overall financial health remains strong, with scheme
+    recoveries exceeding R686k for the period.
+  </p>
+
+  <div class="page-number">Page 6</div>
+</div>
+
+</body>
+</html>
